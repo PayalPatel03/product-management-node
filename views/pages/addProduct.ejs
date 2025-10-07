@@ -1,0 +1,262 @@
+<%- include('../partials/header.ejs')%>
+<!-- ============================================================== -->
+<!-- End Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Page wrapper  -->
+<!-- ============================================================== -->
+<div class="page-wrapper">
+  <!-- ============================================================== -->
+  <!-- Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <div class="page-breadcrumb">
+    <div class="row">
+      <div class="col-12 d-flex no-block align-items-center">
+        <h4 class="page-title">Form Basic</h4>
+        <div class="ml-auto text-right">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Library
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Container fluid  -->
+  <!-- ============================================================== -->
+  <div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <form class="form-horizontal" method="post" action="">
+            <div class="card-body">
+              <h4 class="card-title">Add Product Detail :</h4>
+                <!-- Name -->
+              <div class="form-group row">
+                <label
+                  for="fname"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Name :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter product name here"
+                  />
+                </div>
+              </div>
+              <!-- Price -->
+               <div class="form-group row">
+                <label
+                  for="fname"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Price :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="price"
+                    type="number"
+                    class="form-control"
+                    id="price"
+                    placeholder="Enter product price here"
+                  />
+                </div>
+              </div>
+              <!-- Discount -->
+               <div class="form-group row">
+                <label
+                  for="discount"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Discount :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="discount"
+                    type="number"
+                    class="form-control"
+                    id="discount"
+                    placeholder="Enter product discount here"
+                  />
+                </div>
+              </div>
+              <!-- Brand -->
+               <div class="form-group row">
+                <label
+                  for="brand"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Brand :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="brand"
+                    type="text"
+                    class="form-control"
+                    id="brand"
+                    placeholder="Enter product brand here"
+                  />
+                </div>
+              </div>
+              <!-- Model Number -->
+               <div class="form-group row">
+                <label
+                  for="modelNumber"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Model Number :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="modelNumber"
+                    type="number"
+                    class="form-control"
+                    id="modelNumber"
+                    placeholder="Enter product modelNumber here"
+                  />
+                </div>
+              </div>
+              <!-- Stock -->
+               <div class="form-group row">
+                <label
+                  for="stock"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Stock :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="stock"
+                    type="number"
+                    class="form-control"
+                    id="stock"
+                    placeholder="Enter product stock here"
+                  />
+                </div>
+              </div>
+              <!-- Batch Number -->
+               <div class="form-group row">
+                <label
+                  for="batchNumber"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Batch Number :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="batchNumber"
+                    type="text"
+                    class="form-control"
+                    id="batchNumber"
+                    placeholder="Enter product batchNumber here"
+                  />
+                </div>
+              </div>
+              <!-- Manufacturer -->
+               <div class="form-group row">
+                <label
+                  for="manufacturer"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Manufacturer :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="manufacturer"
+                    type="text"
+                    class="form-control"
+                    id="manufacturer"
+                    placeholder="Enter product manufacturer here"
+                  />
+                </div>
+              </div>
+              <!-- Dimension -->
+               <div class="form-group row">
+                <label
+                  for="dimensions"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Dimensions :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="dimensions"
+                    type="text"
+                    class="form-control"
+                    id="dimensions"
+                    placeholder="Enter product dimensions here"
+                  />
+                </div>
+              </div>
+              <!-- Warranty -->
+               <div class="form-group row">
+                <label
+                  for="warranty"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >Warranty :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="warranty"
+                    type="text"
+                    class="form-control"
+                    id="warranty"
+                    placeholder="Enter product warranty here"
+                  />
+                </div>
+              </div>
+              <!-- Shipping Info -->
+               <div class="form-group row">
+                <label
+                  for="shippingInfo"
+                  class="col-sm-3 text-right control-label col-form-label"
+                  >ShippingInfo :</label
+                >
+                <div class="col-sm-9">
+                  <input
+                    name="shippingInfo"
+                    type="text"
+                    class="form-control"
+                    id="shippingInfo"
+                    placeholder="Enter product shippingInfo here"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="border-top">
+              <div class="card-body">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- editor -->
+
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Right sidebar -->
+    <!-- ============================================================== -->
+    <!-- .right-sidebar -->
+    <!-- ============================================================== -->
+    <!-- End Right sidebar -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Container fluid  -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- footer -->
+  <!-- ============================================================== -->
+  <%- include('../partials/footer.ejs')%>
+</div>

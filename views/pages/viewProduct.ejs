@@ -1,0 +1,109 @@
+<%- include('../partials/header.ejs')%>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h4 class="page-title">Tables</h4>
+                        <div class="ml-auto text-right">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title m-b-0">Static Table</h5>
+                            </div>
+                            <table class="table  overflow-auto table-striped table-responsive">
+                                  <thead class="table-dark">
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Name</th>
+                                      <th scope="col">Price</th>
+                                      <th scope="col">Discount</th>
+                                      <th scope="col">Brand</th>
+                                      <th scope="col">Model Number</th>
+                                      <th scope="col">Stock</th>
+                                      <th scope="col">Batch Number</th>
+                                      <th scope="col">Manufacturer</th>
+                                      <th scope="col">Dimension</th>
+                                      <th scope="col">Warranty</th>
+                                      <th scope="col">Shipping Info</th>
+                                      <th scope="col">Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <% product.forEach((val,idx)=>{ 
+                                      let {name,price,discount,brand,modelNumber,stock,batchNumber,manufacturer,dimensions,warranty,shippingInfo} = val
+                                    %>
+                                    <tr>
+                                      <td><%= idx+1 %></td>
+                                      <td><%= name %></td>
+                                      <td><%= price %></td>
+                                      <td><%= discount %></td>
+                                      <td><%= brand %></td>
+                                      <td><%= modelNumber %></td>
+                                      <td><%= stock %></td>
+                                      <td><%= batchNumber %></td>
+                                      <td><%= manufacturer %></td>
+                                      <td><%= dimensions %></td>
+                                      <td><%= warranty %></td>
+                                      <td><%= shippingInfo %></td>
+                                      <td>
+                                        
+  <a href="/editProduct/<%= val._id %>" class="btn btn-warning me-1">Edit</a>
+  <a href="/deleteProduct/<%= val._id %>" class="btn btn-danger">Delete</a>
+
+
+                                      </td>
+                                    </tr>
+                                      <% }) %> 
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <%- include('../partials/footer.ejs')%>
